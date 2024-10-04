@@ -3,7 +3,7 @@ const app = express();
 
 const PORT = 3500; // 65k
 // criação das rotas
-//app.use(express.static(__dirname + ""))
+app.use(express.static(__dirname + ""));
 
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/src/views/index.html");
